@@ -59,5 +59,31 @@ public class MedunnaPages {
     @FindBy(xpath = "//*[text()='Failed to sign in!']")
     public WebElement SigningirisYapilamadi;
 
+    @FindBy(xpath = "(//*[@class='d-flex align-items-center dropdown-toggle nav-link'])[2]")
+    public WebElement kullanicilogin;
+
+    @FindBy(xpath = "//*[text()='Settings']")
+    public  WebElement kullaniciProfilSettings;
+
+    @FindBy(xpath = "//*[@name='firstName']")
+    public  WebElement hastaProfilSettingsFirstName;
+
+    @FindBy(xpath = "//*[@id='lastName']")
+    public  WebElement hastaProfilSettingsLastName;
+
+    @FindBy(xpath = "//*[@name='email']")
+    public  WebElement hastaProfilSettingsEmail;
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public  WebElement hastaProfilSettingsSave;
+
+    @FindBy(xpath= "(//strong)[1]")
+    public WebElement settingsSaved;
+
+
+
+
+
+
 
 }

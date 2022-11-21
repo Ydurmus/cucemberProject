@@ -44,7 +44,7 @@ public class US004 {
     }
 
     @When("User name kısmına gecersiz bir ifade girer")
-    public void user_name_kismina_gecersiz_bir_ifade_girer() {
+    public void user_name_kismina_gecersiz_bir_usurname_girer() {
         medunnaPages.signinUsername.sendKeys(ConfigReader.getProperty("gecersizUsername"));
 
 
@@ -111,6 +111,6 @@ public class US004 {
          Thread.sleep(saniye*1000);
       } catch (InterruptedException e) {
          throw new RuntimeException(e);
-      }
+      } 
    }
 }

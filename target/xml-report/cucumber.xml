@@ -1,99 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="101.295">
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC01 Giris yapmak icin basarı mesajini doğrulayan, gecerli bir kullanici  adi ve sifre olmalidir." time="16.682">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="96.531">
+    <testcase classname="US06Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="TC01 Kullanıcı bilgileri &quot;firstname, lastname, email&quot; girerken doldurulan kullanıcı bilgileri olmalıdır." time="33.11">
         <system-out>
             <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
 And sayfa 3 saniye bekletilir...............................................passed
 When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
 And Kullanici sign in sekmesine basar.......................................passed
 And sayfa 3 saniye bekletilir...............................................passed
-And Acılan ktucukta Username bolumune gecerli bir username girer............passed
-And Acılan kutucukta Password bolumune gecerli bir password sifresi girer...passed
-Then Kullanicinin giriş yapabildiği test edilir.............................passed
+And gecerli usurname ve password ile giriş yapar............................passed
+And sayfa 1 saniye bekletilir...............................................passed
+And sag ustte yer alan sigin in  butonuna ve settings e tiklar..............passed
+Given acilan sayfanin First name kisminda giriş yapılan First name'in yazdığı doğrulanır.passed
+Then açılan sayfanın Last Name kısmında giriş yapılan Last name'in yazdığı doğrulanır.passed
+Then açılan sayfanın Email kısmında giriş yapılan Email'in yazdığı doğrulanır.passed
+And sayfa 2 saniye bekletilir...............................................passed
 And Sayfa kapatilir.........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC02 Giris yapmak için gecersiz bir kullanici adi, gecerli sifre ile giris  yapilamamalidir." time="13.138">
+    <testcase classname="US06Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="TC02 &quot;Firstname&quot;güncelleme seçeneği olmalıdır." time="31.955">
         <system-out>
             <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
 And sayfa 3 saniye bekletilir...............................................passed
 When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
 And Kullanici sign in sekmesine basar.......................................passed
 And sayfa 3 saniye bekletilir...............................................passed
-And User name kısmına gecersiz bir ifade girer..............................passed
-And Sifre kısmına geçerli bir sifre girer...................................passed
-And Sign in butonuna tıklar.................................................passed
+And gecerli usurname ve password ile giriş yapar............................passed
 And sayfa 1 saniye bekletilir...............................................passed
-Then Failed to sign in! Please check your credentials and try again. yazisinin gorur ve giris yapamaz..passed
+And sag ustte yer alan sigin in  butonuna ve settings e tiklar..............passed
+And açılan sayfayanın First Name kısmına Yeni bir First Name yazılır ve Save ikonuna tıklanır.passed
+Then Settings saved! yazisinin gorulduğu dogrulanir.........................passed
+And sayfa 2 saniye bekletilir...............................................passed
 And Sayfa kapatilir.........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC03 Giris yapmak icin gecerli bir kullanici adi, gecersiz sifre ile giris  yapilamamalidir." time="13.593">
+    <testcase classname="US06Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="TC03 &quot;Lastname&quot; güncelleme seçeneği olmalıdır." time="15.49">
         <system-out>
             <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
 And sayfa 3 saniye bekletilir...............................................passed
 When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
 And Kullanici sign in sekmesine basar.......................................passed
 And sayfa 3 saniye bekletilir...............................................passed
-And Acılan ktucukta Username bolumune gecerli bir username girer............passed
-And Sifre kısmına gecersiz bir sifre girer..................................passed
-And Sign in butonuna tıklar.................................................passed
+And gecerli usurname ve password ile giriş yapar............................passed
 And sayfa 1 saniye bekletilir...............................................passed
-Then Failed to sign in! Please check your credentials and try again. yazisinin gorur ve giris yapamaz..passed
+And sag ustte yer alan sigin in  butonuna ve settings e tiklar..............passed
+And açılan sayfayanın Last Name kısmına Yeni bir Last Name yazılır ve Save ikonuna tıklanır.passed
+Then Settings saved! yazisinin gorulduğu dogrulanir.........................passed
+And sayfa 2 saniye bekletilir...............................................passed
 And Sayfa kapatilir.........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC04 Kullanicinin mevcut kimlik bilgilerini her zaman kullanabilecegi, &quot;Remember me&quot; secenegi olmalidir." time="14.095">
+    <testcase classname="US06Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="TC04  &quot;E-mail&quot; güncelleme seçeneği olmalıdır." time="15.742">
         <system-out>
             <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
 And sayfa 3 saniye bekletilir...............................................passed
 When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
 And Kullanici sign in sekmesine basar.......................................passed
 And sayfa 3 saniye bekletilir...............................................passed
-Then Acılan kutucukta Remember me secenegi oldugu dogrulanir................passed
+And gecerli usurname ve password ile giriş yapar............................passed
 And sayfa 1 saniye bekletilir...............................................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC05 Eger sifre unutulursa diye &quot;Did you forget your password?&quot; secenegi olmalidir." time="15.865">
-        <system-out>
-            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
-And sayfa 3 saniye bekletilir...............................................passed
-When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
-And Kullanici sign in sekmesine basar.......................................passed
-And sayfa 3 saniye bekletilir...............................................passed
-Then Acılan kutucukta Did you forget your password? secenegi oldugu dogrulanir..passed
-And sayfa 1 saniye bekletilir...............................................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC06 You don't have an account yet? Register a new account secenegi olmalidir." time="14.121">
-        <system-out>
-            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
-And sayfa 3 saniye bekletilir...............................................passed
-When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
-And Kullanici sign in sekmesine basar.......................................passed
-And sayfa 3 saniye bekletilir...............................................passed
-Then Acilan kutucukta You don't have an account yet? Register a new account secenegi oldugu test edilir..passed
-And sayfa 1 saniye bekletilir...............................................passed
-And Sayfa kapatilir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US04 Giriş sayfası yalnızca geçerli kimlik bilgileriyle erişilebilir olmalıdır." name="TC07 Cancel secenegi olmalıdır." time="13.237">
-        <system-out>
-            <![CDATA[Given Kullanici belirtilen medunnaUrl'e gider...............................passed
-And sayfa 3 saniye bekletilir...............................................passed
-When Kullanici sayfada sag uste bulunan kisi iconuna tiklar ve sign in ve register sekmesi acilir..passed
-And Kullanici sign in sekmesine basar.......................................passed
-And sayfa 3 saniye bekletilir...............................................passed
-Then Acılan kutucukta Cancel  secenegi oldugu test edilir...................passed
-And sayfa 1 saniye bekletilir...............................................passed
+And sag ustte yer alan sigin in  butonuna ve settings e tiklar..............passed
+And açilan sayfayanin Email kismina Yeni bir Email yazilir ve Save ikonuna tiklanir.passed
+Then Settings saved! yazisinin gorulduğu dogrulanir.........................passed
+And sayfa 2 saniye bekletilir...............................................passed
 And Sayfa kapatilir.........................................................passed
 ]]>
         </system-out>
